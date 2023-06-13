@@ -201,6 +201,8 @@ export type MiscMessageGenerationOptions = MinimalRelayOptions & {
 	timestamp?: Date
     /** the message you want to quote */
 	quoted?: WAMessage
+    /** additional contextInfo */
+    contextInfo?: proto.IMessageContextInfo
     /** disappearing messages settings */
     ephemeralExpiration?: number | string
     /** timeout for media upload to WA server */

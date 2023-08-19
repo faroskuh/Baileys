@@ -1,4 +1,4 @@
-import WebSocket from 'ws'
+import WebSocket from '@d0v3riz/ws'
 import { DEFAULT_ORIGIN } from '../../Defaults'
 import { AbstractSocketClient } from './abstract-socket-client'
 

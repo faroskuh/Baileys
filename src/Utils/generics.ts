@@ -171,7 +171,7 @@ export async function promiseTimeout<T>(ms: number | undefined, promise: (resolv
 }
 
 // generate a random ID to attach to a message
-export const generateMessageID = () => 'WHPI' + randomBytes(6).toString('hex').toUpperCase()
+export const generateMessageID = () => (process.env.WHATSAPP_CONN_IDMSG || 'WHPI') + randomBytes(6).toString('hex').toUpperCase()
 
 export function bindWaitForEvent<T extends keyof BaileysEventMap>(ev: BaileysEventEmitter, event: T) {
 	return async(check: (u: BaileysEventMap[T]) => boolean | undefined, timeoutMs?: number) => {

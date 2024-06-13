@@ -1,6 +1,6 @@
 {
   "name": "@d0v3riz/baileys",
-  "version": "6.7.4",
+  "version": "6.7.5",
   "description": "WhatsApp API",
   "keywords": [
     "whatsapp",
@@ -57,7 +57,7 @@
     "node-cache": "^5.1.2",
     "pino": "^7.0.0",
     "protobufjs": "^7.2.4",
-    "uuid": "^9.0.0",
+    "uuid": "^10.0.0",
     "ws": "^8.13.0"
   },
   "devDependencies": {
